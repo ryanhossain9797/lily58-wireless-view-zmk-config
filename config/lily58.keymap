@@ -10,6 +10,23 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zephyr,display = &oled;
+    };
+
+    // Add custom widget configuration
+    widgets {
+        compatible = "zmk,widgets";
+        status_screen: status_screen {
+            compatible = "zmk,status-screen";
+            label = "STATUS_SCREEN";
+            position = <0>;
+            height = <32>;
+            width = <128>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
