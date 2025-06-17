@@ -71,17 +71,17 @@
         raise_layer {
 // ---------------------------------------------------------------------------------------------------------
 // |      |      |      |      |      |      |                   |      |      |      |      |      |      |
-// |      |      |   ^  |      |      |      |                   |      |      |      |      |      |      |
-// |      |      |      |      |      |      |                   |      |      |      |      |      |      |
+// |      | HOME |   ^  | END  |      |      |                   |      |      |      |      |      |      |
+// |      |  <   |   v  |   >  |      |      |                   |      |      |      |      |      |      |
 // |      |      |      |      |      |      |        |  |       |      |      |      |      |      |      |
 //                      |      |      |      |        |  |       |      |      |      |
             display-name = "Raise";
             bindings = <
-    &trans &trans &trans &trans &trans &trans                     &trans &trans &trans &trans &trans &trans
-    &trans &HOME  &UP    &END   &trans &trans                     &trans &trans &trans &trans &trans &trans
-    &trans &LEFT  &DOWN  &RIGHT &trans &trans                     &trans &trans &trans &trans &trans &trans
-    &trans &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans
-                         &trans &trans &trans &trans       &trans &trans &trans &trans
+    &trans   &trans     &trans     &trans    &trans   &trans                         &trans   &trans   &trans   &trans   &trans &trans
+    &trans   &kp HOME   &kp UP     &kp END   &trans   &trans                         &trans   &trans   &trans   &trans   &trans &trans
+    &trans   &kp LEFT   &kp DOWN   &kp RIGHT &trans   &trans                         &trans   &trans   &trans   &trans   &trans &trans
+    &trans   &trans     &trans     &trans    &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans   &trans &trans
+                        &trans     &trans    &trans   &trans   &trans       &trans   &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
