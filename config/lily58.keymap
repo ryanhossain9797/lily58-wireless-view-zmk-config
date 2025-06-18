@@ -81,7 +81,7 @@
 
             display-name = "Raise";
             bindings = <
-&kp TILDE  &trans    &trans    &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &kp DEL
+&kp GRAVE  &trans    &trans    &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &kp DEL
 &trans     &kp HOME  &kp UP    &kp END    &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans    &trans    &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
